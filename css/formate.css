@@ -1,0 +1,166 @@
+@charset "utf-8";
+body {
+	max-width: 60em;
+	margin: 1em auto;
+	background: rgb(193,107,29);
+	background: linear-gradient(180deg,rgba(193,107,29,1) 0%, rgba(253,204,124,1) 43%,rgba(249,229,199,1) 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}	
+
+header { 
+	height: 5em;
+	padding: 0 1em;
+    margin-bottom: 1em;
+	display: grid;
+	grid-template-columns: 6em 1fr 1fr;
+	border-bottom: thin solid;
+	border-bottom-color: rgb(222 184 135);
+	padding-bottom: 3em;
+	background: transparent;
+}	
+
+header p:first-of-type{
+	font-size: 2em;
+	font-weight: bold;	
+}
+
+header p:last-of-type {
+	transform: rotate(-10deg);
+    border: thin solid;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    align-self: end;
+    width: 15em;
+}
+
+header #backlink {
+ display:inline-block;
+ text-shadow: none; 
+ color: transparent;
+ width: 5em;
+ height: 3em;
+}
+
+h1 {
+	color: rgb(255 255 255);
+	padding: 0.5em;
+	font-family: sans-serif;
+	text-align: center
+}
+
+p {
+	color: rgb(51 25 0);
+	font-family: sans-serif;	
+}
+
+h2 {
+	color: rgb(255 255 255);	/*white*/
+	font-size: 1.5em;
+	text-align: center;
+	font-family: cursive;
+}
+
+p,
+ul {
+	font-size:1.1em;
+	text-align: justify;
+	color: rgb(51 25 0);	/*dark brown*/
+	font-family: sans-serif;	
+}
+ul ul {font-size: inherit;
+}
+h3 {
+	font-family: sans-serif;
+	color: rgb(102 51 0);
+}
+@media (min-width: 30em){
+#leistungen {
+	display: grid;
+	grid-template-columns: 1fr 12em;
+}
+
+#leistungen h3 {
+	grid-column: 1 / -1;
+}
+}
+
+#angebot {
+	background-color: rgb(139 35 35);
+	margin: 1em 3em;
+	padding: 1em;
+	width: 10em;
+	text-align: center;
+}
+
+#angebot h3 {
+font-size: 2em;
+font-variant: small-caps;
+color: rgb(222 184 135);
+}
+
+#angebot p {
+color: 	rgb(222 184 135);
+}
+
+footer {
+	display: grid;
+	grid-template-columns: 1fr 10em;
+}
+
+footer > * {
+	grid-column: -2 / -1;
+}
+a:link {
+	color: rgb(139 35 35);
+	text-decoration: none;
+}
+a:visited {
+	color: rgb(255 211 155);
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(255 255 255);
+	text-decoration: underline;
+}
+
+table,
+th, 
+td {
+	border: none; 
+	border-color: rgb(255 255 255);
+	border-collapse: separate;
+	border-spacing: 20px 30px;
+	margin-top: 2em;
+	margin-left: 14.5em;
+	font-weight: normal;
+  text-align: left;
+	
+}
+
+table {
+	width: 40%;
+	background-color: rgb(255 255 255/ 0.4); 
+	border-radius: 1em; 
+	font-size:1.2em;
+	text-align: left;
+	color: rgb(51 25 0);	/*dark brown*/
+	font-family: sans-serif;
+	padding: 1em;
+	padding-left: 2.5em;
+	table-layout: auto;
+	
+}
+
+
+th{
+  font-weight: 700;
+}
+	
+
+
+
